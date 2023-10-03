@@ -7,6 +7,8 @@ FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDeriva
 # Installation and Use
 This implementation has been created in MATLAB and deployed using the MATLAB compiler. 
 
+Explain the installation and use here...
+
 # Test Data
 Test cases may be found on The Cancer Imaging Archive (TCIA) here:
 https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=1966254
