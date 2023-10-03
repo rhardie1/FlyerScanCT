@@ -49,6 +49,7 @@ We tested and verified case LIDC-IDRI-0003 and included the output for reference
 
 
 ## BibTeX
+,,,
   @article{Messay2010,
   title={A new computationally efficient CAD system for pulmonary nodule detection in CT imagery},
   author={Temesguen Messay and Russell C. Hardie and Steven K. Rogers},
@@ -58,7 +59,7 @@ We tested and verified case LIDC-IDRI-0003 and included the output for reference
   pages={390-406},
   url={ https://doi.org/10.1016/j.media.2010.02.004 }
 }
-
+,,,
 @article{Narayanan2018A,
 author = {Barath Narayanan Narayanan and Russell Craig Hardie and Temesguen Messay Kebede},
 title = {{Performance analysis of a computer-aided detection system for lung nodules in CT at different slice thicknesses}},
