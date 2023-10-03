@@ -4,7 +4,7 @@ Computer aided detection (CAD) of lung nodules in CT scans [1-3]. This is a trad
 # License
 FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License (CC BY-NC-ND 4.0).
 
-Copyright (c) 2023 University of Dayton
+Copyright © 2023 University of Dayton
 
 # Installation and Use
 This implementation has been created in MATLAB and deployed using the MATLAB compiler for Windows. 
