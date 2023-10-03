@@ -21,7 +21,7 @@ flyerscan "flyerscan_output_0003" ".\LIDC-IDRI-0003\01-01-2000-NA-NA-94866\30006
 
 The input folder is assumed to contain a series of .dcm files making up a full thoracic CT exam. The output will be in a file named "flyerscan_output_0003.json" in this case.
 
-The "box" field of the outputs detection coordinates relative to 'ImagePositionPatient' in the CT scan from DICOM headers using the Left, Posterior, Superior (LPS) coordinate system. Each detection has a "box" output as follows: <br>
+The "box" field of the outputs contains detection coordinates relative to 'ImagePositionPatient' in the CT scan from DICOM headers using the Left, Posterior, Superior (LPS) coordinate system. Each detection has a "box" output as follows: <br>
 [ <br>
 central x position in mm <br>
 central y position in mm <br>
