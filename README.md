@@ -30,7 +30,7 @@ We used LIDC-IDRI-0003. Download the folder of .dcm files for this case.
   year={2010},
   volume={14 3},
   pages={390-406},
-  url={https://doi.org/10.1016/j.media.2010.02.004}
+  url={ https://doi.org/10.1016/j.media.2010.02.004 }
 }
 
 @article{Narayanan2018A,
@@ -44,7 +44,7 @@ pages = {014504},
 keywords = {computer-aided detection, computed tomography, lung nodules, slice thickness, downsampling, Lung, Computed tomography, Computer aided diagnosis and therapy, CAD systems, Computer aided design, Computing systems, Computer simulations, Sensors, Lung cancer},
 year = {2018},
 doi = {10.1117/1.JMI.5.1.014504},
-url = {https://doi.org/10.1117/1.JMI.5.1.014504}
+url = { https://doi.org/10.1117/1.JMI.5.1.014504 }
 }
 
 
@@ -56,6 +56,6 @@ url = {https://doi.org/10.1117/1.JMI.5.1.014504}
   volume={},
   number={},
   pages={262-266},
-  doi={10.1109/NAECON.2018.8556669}
-  url = {https://ieeexplore.ieee.org/document/8556669}
+  doi={10.1109/NAECON.2018.8556669},
+  url = { https://ieeexplore.ieee.org/document/8556669 }
   }
