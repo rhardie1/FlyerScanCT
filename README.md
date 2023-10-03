@@ -2,7 +2,9 @@
 Computer aided detection (CAD) of lung nodules in CT scans [1-3]. This is a traditional handcrafted-feature-based CAD system. This release uses the system described in [1] with updated support vector machine classifier as described in [3]. The system is trained as described in [1] using 2.5 mm thickness CT scans. The system takes as input a folder of .dcm files from a CT exam and produces a .json text file of all detections ordered from most suspicious to least suspicious. The coordinates of the center of each detection are given as well as the bounding box dimensions. The coordinates are in units of mm with respect to 'ImagePositionPatient' in CT scan from DICOM headers. The output format provided here is similar to that used by the MONAI detection system [4-5]. 
 
 # License
-FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License (CC BY-NC-ND 4.0)
+FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License (CC BY-NC-ND 4.0).
+
+Copyright (c) 2023 University of Dayton
 
 # Installation and Use
 This implementation has been created in MATLAB and deployed using the MATLAB compiler for Windows. 
