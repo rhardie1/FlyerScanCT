@@ -1,5 +1,5 @@
 # FlyerScanCT
-Computer aided detection (CAD) of lung nodules in CT scans [1-3]. This is a traditional handcrafted-feature-based CAD system. This release uses the system described in [1] with updated support vector machine classifier as described in [3]. The system is trained as described in [1] using 2.5 mm thickness CT scans. The system takes as input a folder of .dcm files from a CT exam and produces a JSON text file of all detections ordered from most suspicious to least suspicious. The coordinates of the center of each detection are given as well as the bounding box dimensions. The coordinates are in units of mm with respect to 'ImagePositionPatient' in CT scan from DICOM headers. The output format provided here is similar to that used by the MONAI detection system [4-5]. 
+Computer aided detection (CAD) of lung nodules in CT scans [1-3]. This is a traditional handcrafted-feature-based CAD system. This release uses the system described in [1] with updated support vector machine classifier as described in [3]. The system is trained as described in [1] using 2.5 mm thickness CT scans. The system takes as input a folder of .dcm files from a CT exam and produces a .json text file of all detections ordered from most suspicious to least suspicious. The coordinates of the center of each detection are given as well as the bounding box dimensions. The coordinates are in units of mm with respect to 'ImagePositionPatient' in CT scan from DICOM headers. The output format provided here is similar to that used by the MONAI detection system [4-5]. 
 
 # License
 FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License (CC BY-NC-ND 4.0)
@@ -8,13 +8,27 @@ FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDeriva
 This implementation has been created in MATLAB and deployed using the MATLAB compiler for Windows. 
 
 1. Install MATLAB Runtime and the flyerscan.exe executable by double clicking on MyAppInstaller.exe.
-2. The FlyerScan CT app my be executed by double clicking the flyerscan.exe executable file, calling the function from the DOC command window, or using a batch file (see main.bat).
+2. The FlyerScan CT app my be executed by double clicking the flyerscan.exe executable file, calling the function from the DOS command window, or using a batch file (see main.bat).
 3. Calling the executable file with no input arguments will bring up a user interface to close the folder of .dcm files that you want to process. The output will automatically be called "flyerscan_output.json".
-4. The file "main.bat" shows how to run the code in batch form where you can specify the input folder and output file name. Simply edit the .bat file and then double click the .bat file.
+4. The file "main.bat" shows how to run the code in batch form where you can specify the input folder and output file name. Simply edit the .bat file and then double click the .bat file. Or execute a similar command as that illustrated in "main.bat" from the command window.
 5. Make sure that you have write permission where the output is defined. By default the output goes where the executable is.
 
-An example of a command line execution (or batch file) looks like this with the first input being the output name and the second being the input folder path:
-flyerscan "flyerscan_output_0003" ".\LIDC-IDRI-0003\01-01-2000-NA-NA-94866\3000611.000000-NA-03264". The input folder is assumed to contain a series of .dcm files making up a full thoracic CT exam. The output will be in a file named "flyerscan_output_0003.json" in this case.
+An example of a command line execution (or batch file) is shown below with the first input being the .json output name and the second being the input folder path:
+
+flyerscan "flyerscan_output_0003" ".\LIDC-IDRI-0003\01-01-2000-NA-NA-94866\3000611.000000-NA-03264". 
+
+The input folder is assumed to contain a series of .dcm files making up a full thoracic CT exam. The output will be in a file named "flyerscan_output_0003.json" in this case.
+
+The "box" field of the outputs are as follows relative to 'ImagePositionPatient' in CT scan from DICOM headers:
+[
+central x position in mm
+central y position in mm
+central z position in mm
+bounding box size in x in mm
+bounding box size in y in mm
+bounding box size in z in mm
+]
+The "score" field lists the support vector machine output for each detection in the same order as "box" and ordered from most suspicious to least suspicious.
 
 # Test Data
 Test cases may be found on The Cancer Imaging Archive (TCIA) here:
