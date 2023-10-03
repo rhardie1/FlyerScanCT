@@ -19,15 +19,15 @@ flyerscan "flyerscan_output_0003" ".\LIDC-IDRI-0003\01-01-2000-NA-NA-94866\30006
 
 The input folder is assumed to contain a series of .dcm files making up a full thoracic CT exam. The output will be in a file named "flyerscan_output_0003.json" in this case.
 
-The "box" field of the outputs are as follows relative to 'ImagePositionPatient' in CT scan from DICOM headers:
-[
-central x position in mm
-central y position in mm
-central z position in mm
-bounding box size in x in mm
-bounding box size in y in mm
-bounding box size in z in mm
-]
+The "box" field of the outputs are as follows relative to 'ImagePositionPatient' in CT scan from DICOM headers: <br>
+[ <br>
+central x position in mm <br>
+central y position in mm <br>
+central z position in mm <br>
+bounding box size in x in mm <br>
+bounding box size in y in mm <br>
+bounding box size in z in mm <br>
+] <br>
 The "score" field lists the support vector machine output for each detection in the same order as "box" and ordered from most suspicious to least suspicious.
 
 # Test Data
