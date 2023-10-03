@@ -34,7 +34,7 @@ The "score" field lists the support vector machine output for each detection in 
 Test cases may be found on The Cancer Imaging Archive (TCIA) here:
 https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=1966254
 
-We tested and verified case LIDC-IDRI-0003 and included the output for reference here. Download the folder of .dcm files for this case and verify the output matches the one provided here.
+We tested and verified case LIDC-IDRI-0003 and included the output for reference here (flyerscan_output_0003.json). Download the folder of .dcm files for this case and verify the output matches the one provided here.
 
 ## References
 1. Messay T, Hardie RC, Rogers SK. A new computationally efficient CAD system for pulmonary nodule detection in CT imagery. Med Image Anal. 2010;14(3):390-406. doi:10.1016/j.media.2010.02.004 (https://doi.org/10.1016/j.media.2010.02.004)
