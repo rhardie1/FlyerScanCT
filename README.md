@@ -5,9 +5,16 @@ Computer aided detection (CAD) of lung nodules in CT scans [1-3]. This is a trad
 FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License (CC BY-NC-ND 4.0)
 
 # Installation and Use
-This implementation has been created in MATLAB and deployed using the MATLAB compiler. 
+This implementation has been created in MATLAB and deployed using the MATLAB compiler for Windows. 
 
-Explain the installation and use here...
+1. Install MATLAB Runtime and the flyerscan.exe executable by double clicking on MyAppInstaller.exe.
+2. The FlyerScan CT app my be executed by double clicking the flyerscan.exe executable file, calling the function from the DOC command window, or using a batch file (see main.bat).
+3. Calling the executable file with no input arguments will bring up a user interface to close the folder of .dcm files that you want to process. The output will automatically be called "flyerscan_output.json".
+4. The file "main.bat" shows how to run the code in batch form where you can specify the input folder and output file name. Simply edit the .bat file and then double click the .bat file.
+5. Make sure that you have write permission where the output is defined. By default the output goes where the executable is.
+
+An example of a command line execution (or batch file) looks like this with the first input being the output name and the second being the input folder path:
+flyerscan "flyerscan_output_0003" ".\LIDC-IDRI-0003\01-01-2000-NA-NA-94866\3000611.000000-NA-03264". The input folder is assumed to contain a series of .dcm files making up a full thoracic CT exam. The output will be in a file named "flyerscan_output_0003.json" in this case.
 
 # Test Data
 Test cases may be found on The Cancer Imaging Archive (TCIA) here:
