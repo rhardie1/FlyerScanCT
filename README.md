@@ -7,7 +7,7 @@ FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDeriva
 # Installation and Use
 This implementation has been created in MATLAB and deployed using the MATLAB compiler for Windows. 
 
-1. Install MATLAB Runtime and the flyerscan.exe executable by double clicking on MyAppInstaller.exe.
+1. Install MATLAB Runtime and the FlyerScan CT executable by double clicking on MyAppInstaller.exe.
 2. The FlyerScan CT app my be executed by double clicking the flyerscan.exe executable file, calling the function from the DOS command window, or using a batch file (see main.bat).
 3. Calling the executable file with no input arguments will bring up a user interface to close the folder of .dcm files that you want to process. The output will automatically be called "flyerscan_output.json".
 4. The file "main.bat" shows how to run the code in batch form where you can specify the input folder and output file name. Simply edit the .bat file and then double click the .bat file. Or execute a similar command as that illustrated in "main.bat" from the command window.
