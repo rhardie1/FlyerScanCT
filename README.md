@@ -1,5 +1,5 @@
 # FlyerScanCT
-Computer aided detection (CAD) of lung nodules in CT scans [1-3]. This is a traditional handcrafted-feature-based CAD system. This release uses the system described in [1] with updated support vector machine classifier as described in [3]. The system is trained as described in [1] using 2.5 mm thickness CT scans. The system takes as input a folder of .dcm files from a CT exam and produces a .json text file of all detections ordered from most suspicious to least suspicious. The coordinates of the center of each detection are given as well as the bounding box dimensions. The coordinates are in units of mm with respect to 'ImagePositionPatient' in CT scan from DICOM headers. The output format provided here is similar to that used by the MONAI detection system [4-5]. 
+Computer aided detection (CAD) of lung nodules in CT scans [1-3]. The original system [1] was one of the top two performers at the first lung nodule detection challenge of its type, ANODE09 [4]. FlyerScanCT is a traditional handcrafted-feature-based CAD system. This release uses the system described in [1] with updated support vector machine classifier as described in [3]. The system is trained as described in [1] using 2.5 mm thickness CT scans. The system takes as input a folder of .dcm files from a CT exam and produces a .json text file of all detections ordered from most suspicious to least suspicious. The coordinates of the center of each detection are given as well as the bounding box dimensions. The coordinates are in units of mm with respect to 'ImagePositionPatient' in CT scan from DICOM headers. The output format provided here is similar to that used by the MONAI detection system [5,6]. 
 
 # License
 FlyersScan is released under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License (CC BY-NC-ND 4.0).
@@ -45,9 +45,11 @@ We tested and verified case LIDC-IDRI-0003 and included the output for reference
    
 3. B. N. Narayanan, R. C. Hardie and T. M. Kebede, "Performance Analysis of Feature Selection Techniques for Support Vector Machine and its Application for Lung Nodule Detection," NAECON 2018 - IEEE National Aerospace and Electronics Conference, Dayton, OH, USA, 2018, pp. 262-266, doi: 10.1109/NAECON.2018.8556669. (https://ieeexplore.ieee.org/document/8556669)
 
-4. https://catalog.ngc.nvidia.com/orgs/nvidia/teams/monaitoolkit/models/monai_lung_nodule_ct_detection
+4.B. van Ginneken, S.G. Armato, B. de Hoop, S. van de Vorst, T. Duindam, M. Niemeijer, K. Murphy, A.M.R. Schilham, A. Retico, M.E. Fantacci, N. Camarlinghi, F. Bagagli, I. Gori, T. Hara, H. Fujita, G. Gargano, R. Belloti, F.D. Carlo, R. Megna, S. Tangaro, L. Bolanos, P. Cerello, S.C. Cheran, E.L. Torres and M. Prokop. "Comparing and combining algorithms for computer-aided detection of pulmonary nodules in computed tomography scans: the ANODE09 study", Medical Image Analysis 2010;14:707-722. https://anode09.grand-challenge.org/
+
+6. https://catalog.ngc.nvidia.com/orgs/nvidia/teams/monaitoolkit/models/monai_lung_nodule_ct_detection
    
-5. https://github.com/Project-MONAI/tutorials/tree/main/detection
+7. https://github.com/Project-MONAI/tutorials/tree/main/detection
 
 
 ## BibTeX
