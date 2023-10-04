@@ -45,7 +45,7 @@ We tested and verified case LIDC-IDRI-0003 and included the output for reference
    
 3. B. N. Narayanan, R. C. Hardie and T. M. Kebede, "Performance Analysis of Feature Selection Techniques for Support Vector Machine and its Application for Lung Nodule Detection," NAECON 2018 - IEEE National Aerospace and Electronics Conference, Dayton, OH, USA, 2018, pp. 262-266, doi: 10.1109/NAECON.2018.8556669. (https://ieeexplore.ieee.org/document/8556669)
 
-4.B. van Ginneken, S.G. Armato, B. de Hoop, S. van de Vorst, T. Duindam, M. Niemeijer, K. Murphy, A.M.R. Schilham, A. Retico, M.E. Fantacci, N. Camarlinghi, F. Bagagli, I. Gori, T. Hara, H. Fujita, G. Gargano, R. Belloti, F.D. Carlo, R. Megna, S. Tangaro, L. Bolanos, P. Cerello, S.C. Cheran, E.L. Torres and M. Prokop. "Comparing and combining algorithms for computer-aided detection of pulmonary nodules in computed tomography scans: the ANODE09 study", Medical Image Analysis 2010;14:707-722. https://anode09.grand-challenge.org/
+4. B. van Ginneken, S.G. Armato, B. de Hoop, S. van de Vorst, T. Duindam, M. Niemeijer, K. Murphy, A.M.R. Schilham, A. Retico, M.E. Fantacci, N. Camarlinghi, F. Bagagli, I. Gori, T. Hara, H. Fujita, G. Gargano, R. Belloti, F.D. Carlo, R. Megna, S. Tangaro, L. Bolanos, P. Cerello, S.C. Cheran, E.L. Torres and M. Prokop. "Comparing and combining algorithms for computer-aided detection of pulmonary nodules in computed tomography scans: the ANODE09 study", Medical Image Analysis 2010;14:707-722. https://anode09.grand-challenge.org/
 
 6. https://catalog.ngc.nvidia.com/orgs/nvidia/teams/monaitoolkit/models/monai_lung_nodule_ct_detection
    
