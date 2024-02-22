@@ -1,7 +1,7 @@
 # FlyerScanCT
 FlyerScanCT is a computer aided detection (CAD) system for automatically identifying lung nodules in CT scans [1-3]. The original system [1] was one of the top two performers in the first lung nodule detection challenge of its type, ANODE09 [4]. FlyerScanCT is a traditional handcrafted-feature-based CAD system. This release uses the system described in [1] with updated support vector machine classifier as described in [3]. The system is trained as described in [1] using 2.5 mm thickness CT scans. The system takes as input a folder of .dcm files from a CT exam and produces a .json text file of all detections ordered from most suspicious to least suspicious. The coordinates of the center of each detection are given as well as the bounding box dimensions. The coordinates are in units of mm with respect to 'ImagePositionPatient' found in the CT scan DICOM headers. A detection score representing the level of confidence is also provided along with each detection location. The output format provided here is similar to that used by the MONAI detection system [5,6]. FlyerScan was used recently in a study involving lung nodule detection in pediatric CT scans [7].
 
-Updated 2/22/2024 to allow for the processing of thin slice CT data (≤ 1.25mm thickness) to producing the correct detection corrdinates.
+Updated 2/22/2024 to allow for the processing of thin slice CT data (≤ 1.25mm thickness) to produce the correct detection corrdinates.
 
 
 # License
