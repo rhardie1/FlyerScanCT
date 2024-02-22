@@ -54,7 +54,7 @@ We tested and verified case LIDC-IDRI-0003 and included the output for reference
    
 6. https://github.com/Project-MONAI/tutorials/tree/main/detection
 
-7. Hardie RC, Trout AT, Dillman JR, Narayanan BN, Tanimoto AA. Performance Analysis in Children of Traditional and Deep Learning CT Lung Nodule Computer-Aided Detection Systems Trained on Adults. AJR Am J Roentgenol. Published online February 21, 2024. doi:10.2214/AJR.23.30345
+7. Hardie RC, Trout AT, Dillman JR, Narayanan BN, Tanimoto AA. Performance Analysis in Children of Traditional and Deep Learning CT Lung Nodule Computer-Aided Detection Systems Trained on Adults. AJR Am J Roentgenol. Published online February 21, 2024. https://doi.org/10.2214/AJR.23.30345
 
 ## BibTeX
 
