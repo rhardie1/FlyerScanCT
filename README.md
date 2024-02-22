@@ -1,5 +1,5 @@
 # FlyerScanCT
-FlyerScanCT is a computer aided detection (CAD) system for automatically identifying lung nodules in CT scans [1-3]. The original system [1] was one of the top two performers in the first lung nodule detection challenge of its type, ANODE09 [4]. FlyerScanCT is a traditional handcrafted-feature-based CAD system. This release uses the system described in [1] with updated support vector machine classifier as described in [3]. The system is trained as described in [1] using 2.5 mm thickness CT scans. The system takes as input a folder of .dcm files from a CT exam and produces a .json text file of all detections ordered from most suspicious to least suspicious. The coordinates of the center of each detection are given as well as the bounding box dimensions. The coordinates are in units of mm with respect to 'ImagePositionPatient' found in the CT scan DICOM headers. A detection score representing the level of confidence is also provided along with each detection location. The output format provided here is similar to that used by the MONAI detection system [5-7]. FlyerScan was used recently in a study involving lung nodule detection in pediatric CT scans [8].
+FlyerScanCT is a computer aided detection (CAD) system for automatically identifying lung nodules in CT scans [1-3]. The original system [1] was one of the top two performers in the first lung nodule detection challenge of its type, ANODE09 [4]. FlyerScanCT is a traditional handcrafted-feature-based CAD system. This release uses the system described in [1] with updated support vector machine classifier as described in [3]. The system is trained as described in [1] using 2.5 mm thickness CT scans. The system takes as input a folder of .dcm files from a CT exam and produces a .json text file of all detections ordered from most suspicious to least suspicious. The coordinates of the center of each detection are given as well as the bounding box dimensions. The coordinates are in units of mm with respect to 'ImagePositionPatient' found in the CT scan DICOM headers. A detection score representing the level of confidence is also provided along with each detection location. The output format provided here is similar to that used by the MONAI detection system [5,6]. FlyerScan was used recently in a study involving lung nodule detection in pediatric CT scans [7].
 
 Updated 2/22/2024 to allow for processing thin slice (≤ 1.25mm thickness) data with correct detection corrdinates.
 
@@ -50,11 +50,11 @@ We tested and verified case LIDC-IDRI-0003 and included the output for reference
 
 4. B. van Ginneken, S.G. Armato, B. de Hoop, S. van de Vorst, T. Duindam, M. Niemeijer, K. Murphy, A.M.R. Schilham, A. Retico, M.E. Fantacci, N. Camarlinghi, F. Bagagli, I. Gori, T. Hara, H. Fujita, G. Gargano, R. Belloti, F.D. Carlo, R. Megna, S. Tangaro, L. Bolanos, P. Cerello, S.C. Cheran, E.L. Torres and M. Prokop. "Comparing and combining algorithms for computer-aided detection of pulmonary nodules in computed tomography scans: the ANODE09 study", Medical Image Analysis 2010;14:707-722. https://anode09.grand-challenge.org/
 
-6. https://catalog.ngc.nvidia.com/orgs/nvidia/teams/monaitoolkit/models/monai_lung_nodule_ct_detection
+5. https://catalog.ngc.nvidia.com/orgs/nvidia/teams/monaitoolkit/models/monai_lung_nodule_ct_detection
    
-7. https://github.com/Project-MONAI/tutorials/tree/main/detection
+6. https://github.com/Project-MONAI/tutorials/tree/main/detection
 
-8. Hardie RC, Trout AT, Dillman JR, Narayanan BN, Tanimoto AA. Performance Analysis in Children of Traditional and Deep Learning CT Lung Nodule Computer-Aided Detection Systems Trained on Adults. AJR Am J Roentgenol. Published online February 21, 2024. doi:10.2214/AJR.23.30345
+7. Hardie RC, Trout AT, Dillman JR, Narayanan BN, Tanimoto AA. Performance Analysis in Children of Traditional and Deep Learning CT Lung Nodule Computer-Aided Detection Systems Trained on Adults. AJR Am J Roentgenol. Published online February 21, 2024. doi:10.2214/AJR.23.30345
 
 ## BibTeX
 
