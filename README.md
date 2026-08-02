@@ -18,11 +18,11 @@ This implementation has been created in MATLAB and deployed using the MATLAB com
 4. The file "main.bat" shows how to run the executable in batch form where you can specify the input folder and output file name. Simply edit the .bat file and then double click the .bat file. Or execute a similar command as that illustrated in "main.bat" from the command window.
 5. Make sure that you have write permission where the output is defined. By default the output goes where the executable is called from.
 
-An example of a command line execution (or batch file) is shown below with the first input being the .json output name and the second being the input folder path:
+An example of a command line execution (or batch file) is shown below with the first argument is the executable file, the scond is the .json output name, and the third being the input folder path:
 
 "C:\Program Files\flyerscan\application\flyerscan.exe" "deep_flyerscan_output_0003" "E:\Medical\LIDC-IDRI\manifest-1600709154662\LIDC-IDRI\LIDC-IDRI-0003\01-01-2000-NA-NA-94866\3000611.000000-NA-03264"
 
-The input folder is assumed to contain a series of .dcm files making up a full thoracic CT exam. The output will be in a file named "flyerscan_output_0003.json" in this case.
+The input folder is assumed to contain a series of .dcm files making up a full thoracic CT exam. Note, do not include "\" at the end of the folder path. The output will be in a file named "flyerscan_output_0003.json" in this case.
 
 The "box" field of the output contains detection coordinates relative to 'ImagePositionPatient' in the CT scan from DICOM headers using the Left, Posterior, Superior (LPS) coordinate system. Each detection has a "box" output as follows: <br>
 [ <br>
